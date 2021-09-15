@@ -3,6 +3,7 @@ import Guard from './Guard'
 import CommandManager from './managers/CommandManager'
 import { Command, BaseCommand } from './entities/Command'
 import MessageCreate from './events/MessageCreate'
+import MakeCommand from './commands/MakeCommand'
 
 export default class Index extends BaseAddon<Index> {
   public addonName = 'basic_commands'
@@ -14,7 +15,9 @@ export default class Index extends BaseAddon<Index> {
   }
 
   public registerCLI () {
-    return []
+    return [
+      MakeCommand
+    ]
   }
 
   public registerCommands () {

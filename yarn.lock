@@ -37,10 +37,10 @@
   dependencies:
     arrify "^1.0.1"
 
-"@discord-factory/core-next@^1.1.4":
-  version "1.1.4"
-  resolved "https://registry.yarnpkg.com/@discord-factory/core-next/-/core-next-1.1.4.tgz#85b0b4e091e4a5ed6fcff65512c17b611405df5f"
-  integrity sha512-oJPQArSOX6rNXp+75n97oNJf6mORN4qrr2j+DB33S8HRC9B/1GH+cz3pXwQNRUwKsv89E6EjyHbBlfBQBe4fBg==
+"@discord-factory/core-next@^1.1.6":
+  version "1.1.6"
+  resolved "https://registry.yarnpkg.com/@discord-factory/core-next/-/core-next-1.1.6.tgz#ccb79e1df27e2cd7337fc7440d633a640343216e"
+  integrity sha512-fyXEjLTLN2YFKIvoqb4udAy/6rqfohaB7kZndVqlBdDkgTU87xNetJCJlUaz90YcNBNIMrLQ7e41mwvlYITSiQ==
   dependencies:
     "@leadcodedev/logger" "^1.0.0"
     cross-env "^7.0.3"

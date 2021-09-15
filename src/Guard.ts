@@ -9,8 +9,8 @@ export default class Guard {
 
   /**
    * Performs recurring checks before an order is executed.
-   * Calls on the middleware assigned to the command used
-   * to authorise or not the execution of the command.
+   * Calls on the middleware assigned to the Command used
+   * to authorise or not the execution of the Command.
    * @param message Message
    */
   public async protect (message: Message) {
@@ -42,7 +42,7 @@ export default class Guard {
     if (!message.content.startsWith(prefix)) {
       /**
        * Emission of the event when
-       * the message received is not a command
+       * the message received is not a Command
        */
       return NodeEmitter.emit(
         `${this.addon.addonName}::message::received`,
@@ -73,7 +73,7 @@ export default class Guard {
 
       /**
        * Emit successfully running
-       * command event from core.
+       * Command event from core.
        */
       await command?.run(message, args.slice(1))
 
@@ -106,9 +106,8 @@ export default class Guard {
         context.setCancelled(true)
 
         const commandMissingRole = this.addon.context.getModuleEnvironment(this.addon.addonName, 'COMMAND_MISSING_ROLES')
-        console.log(commandMissingRole)
         return await message.reply({
-          content: commandMissingRole || 'You are not allowed to execute this command.'
+          content: commandMissingRole || 'You are not allowed to execute this Command.'
         })
       }
     }
@@ -133,7 +132,7 @@ export default class Guard {
         const commandMissingPermission = this.addon.context.getModuleEnvironment(this.addon.addonName, 'COMMAND_MISSING_PERMISSION')
         return await message.reply(
           commandMissingPermission
-          || 'You are not allowed to execute this command.')
+          || 'You are not allowed to execute this Command.')
       }
     }
   }

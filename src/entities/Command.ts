@@ -4,7 +4,7 @@ import { BaseAddon } from '@discord-factory/core-next'
 import Addon from '../index'
 
 export class CommandEntity {
-  public static type: string = 'basic-command'
+  public static type: string = 'basic-Command'
 
   constructor (
     public addon: BaseAddon<Addon>,

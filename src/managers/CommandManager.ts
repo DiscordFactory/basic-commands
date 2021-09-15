@@ -28,7 +28,7 @@ export default class CommandManager {
         const res = await import(file.path)
 
         if (res?.default?.type) {
-          if (res.default.type === 'basic-command') {
+          if (res.default.type === 'basic-Command') {
             const item = await import(file.path)
             const Class = new item.default()
 
