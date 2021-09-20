@@ -15,7 +15,7 @@ export default class MakeCommand extends BaseAddonCommand<Addon> {
     const targetFile = path.join(process.cwd(), 'src', location.dir, `${location.name}.ts`)
 
     const templateFile = await fs.promises.readFile(
-      path.join(__dirname, '..', '..', 'src', 'templates', 'Command'),
+      path.join(__dirname, '..', '..', 'src', 'templates', 'Command.txt'),
       { encoding: 'utf-8' }) as unknown as string
 
     const filenameUpper = location.name.charAt(0).toUpperCase() + location.name.slice(1)

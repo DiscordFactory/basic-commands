@@ -14,7 +14,7 @@ export default class CommandContext {
 
   /**
    * Allow or disallow the execution
-   * of the parent Command.
+   * of the parent Command.txt.
    * @param bool
    */
   public setCancelled (bool: boolean): void {

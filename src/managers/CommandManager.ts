@@ -13,7 +13,9 @@ export default class CommandManager {
   }
 
   private async run () {
-    const baseDir = path.join(process.cwd(), 'src')
+    const baseDir = path.join(process.cwd(), process.env.NODE_ENV === 'development'
+      ? 'src'
+      : path.join('build', 'src'))
 
     const fetchedFiles = await fetch(
       baseDir,
@@ -21,6 +23,7 @@ export default class CommandManager {
       'utf-8',
       ['node_modules', 'test']
     )
+
 
     const files = Array.from(fetchedFiles, ([key, file]) => ({ key, ...file }))
     await Promise.all(

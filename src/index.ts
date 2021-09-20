@@ -10,6 +10,10 @@ export default class Index extends BaseAddon<Index> {
   public commandManager: CommandManager = new CommandManager(this)
   public guard: Guard = new Guard(this)
 
+  public async init (): Promise<Index> {
+    return this
+  }
+
   public registerHooks () {
     return []
   }
