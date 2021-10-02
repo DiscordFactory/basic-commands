@@ -6,7 +6,7 @@ import MessageCreate from './events/MessageCreate'
 import MakeCommand from './commands/MakeCommand'
 
 export default class Index extends BaseAddon<Index> {
-  public addonName = 'basic_commands'
+  public addonName = 'MESSAGE_COMMANDS'
   public commandManager: CommandManager = new CommandManager(this)
   public guard: Guard = new Guard(this)
 

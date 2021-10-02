@@ -6,7 +6,7 @@ import Logger from '@leadcodedev/logger'
 
 @CLICommand({
   name: 'Create command file',
-  prefix: 'make:basic-command',
+  prefix: 'make:message-command',
   usages: ['filename']
 })
 export default class MakeCommand extends BaseAddonCommand<Addon> {
