@@ -11,5 +11,5 @@
     "curly": "off",
     "@typescript-eslint/no-inferrable-types": "off",
     "new-cap": "off"
-  }
+  },
 }
