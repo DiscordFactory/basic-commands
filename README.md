@@ -28,7 +28,7 @@ npm run factory make:message-command MyCommand
 ```
 With YARN
 ```
-yarn factory make:basic-message MyCommand
+yarn factory make:message-command MyCommand
 ```
 
 Now you will need to add 2 keys to your environment file :
