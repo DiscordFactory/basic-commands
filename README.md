@@ -10,7 +10,7 @@ npm install @discord-factory/message-commands
 yarn add @discord-factory/message-commands
 ```
 
-Add the module to the plugins in the `App/start/Kernel.ts` file:
+Add the module to the plugins in the `/start/Kernel.ts` file:
 ```ts
 import MessageCommands from '@discord-factory/message-commands'
 
