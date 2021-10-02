@@ -1,6 +1,6 @@
 {
-  "name": "@discord-factory/basic-commands",
-  "version": "1.2.1",
+  "name": "@discord-factory/message-commands",
+  "version": "1.0.0",
   "description": "",
   "main": "build/index.js",
   "author": "Baptiste Parmantier <baptiste.parmantier.pro@gmail.com>",
