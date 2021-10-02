@@ -12,11 +12,11 @@ yarn add @discord-factory/message-commands
 
 Add the module to the plugins in the `App/start/Kernel.ts` file:
 ```ts
-import BasicCommands from '@discord-factory/basic-commands'
+import MessageCommands from '@discord-factory/message-commands'
 
 export default class Kernel {
   public registerAddons () {
-    return [BasicCommands] 👈 // Do not instanciate it
+    return [MessageCommands] 👈 // Do not instanciate it
   }
 }
 ```
